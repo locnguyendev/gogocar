@@ -2,3 +2,51 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+@import "pages/home";
+
+body {
+  background: url(../images/gray-pattern.jpg);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row-fluid {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+}
+.offer {
+  border-radius: 4px;
+  background: #0096e3;
+  position: relative;
+  top: 30px;
+  padding: 20px;
+  text-align: right;
+  h2 {
+    margin: 0;
+  }
+}
+// header
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+//  footer
+footer {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 60px 0 30px;
+}
+
