@@ -7,36 +7,3 @@
 		width: 100%;
 	}
 }
-
-.booking-form {
-	background: #fff;
-	border-radius: 0;
-	padding: 0;
-	.nav-tabs {
-		li {
-			width: 50%;
-			a {
-				border-top: 5px solid transparent;
-				border-radius: 0;
-				text-align: center;
-				width: 100%;
-			}
-			&.active {
-				a {
-					border-top: 5px solid #4cb6ed;
-				}
-			}
-		}
-	}
-	.tab-content {
-		padding: 10px 10px 30px;
-	}
-	.pickup-date {
-		lanbel {
-			display: block;
-		}
-	}
-	button[type="submit"] {
-		width: 100%;
-	}
-}

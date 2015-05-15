@@ -1,13 +1,16 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,700italic,900italic);
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import "vendor/theme";
 @import "pages/home";
 
 body {
-  background: url(../images/gray-pattern.jpg);
-  font-family: 'Open Sans', sans-serif;
+  // background: url(../images/gray-pattern.jpg);
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .row-fluid {
@@ -34,9 +37,10 @@ img {
 // header
 .navbar {
   margin-bottom: 0;
+  font-size: 15px;
 }
 .navbar-brand {
-  padding: 10px 15px;
+  padding: 7px 15px;
 }
 
 .info-box {
@@ -50,3 +54,81 @@ footer {
   padding: 60px 0 30px;
 }
 
+.main-content {
+  margin-top: 40px;
+}
+
+
+.booking-form {
+  background: #077fcc;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 0;
+  form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-tabs {
+    li {
+      width: 50%;
+      a {
+        border: none;
+        border-radius: 0;
+        text-align: center;
+        width: 100%;
+        i {
+          margin-right: 5px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        @media (max-width: 768px) { 
+          font-size: 14px;}
+      }
+
+      &.active {
+        a, a:hover, a:focus {
+          background: #077fcc;
+          border: none;
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding: 10px 10px 30px;
+  }
+  .pickup-date {
+    lanbel {
+      display: block;
+    }
+  }
+  label {
+    color: #fff;
+    font-size: 15px;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    margin-top: 3px;
+  }
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+.ads {
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.info-box {
+  padding-left: 0;
+  padding-right: 0;
+  .info-box-inner {
+    padding-right: 30px;
+  }
+}
